@@ -12,25 +12,25 @@ function initKeydown() {
     document.addEventListener('keydown', onKeydown);
 }
 
-function onKeydown(event) {
-    // Если фигура исчезла из памяти, кнопки не должны ломать код
-    if (!tetris.tetromino) return; 
+// function onKeydown(event) {
+//     // Если фигура исчезла из памяти, кнопки не должны ломать код
+//     if (!tetris.tetromino) return; 
 
-    switch (event.key) {
-        case 'ArrowUp':
-            rotate();
-            break;
-        case 'ArrowDown':
-            moveDown();
-            break;
-        case 'ArrowLeft':
-            moveLeft();
-            break;
-        case 'ArrowRight':
-            moveRight();
-            break;
-    }
-}
+// //  .\\   switch (event.key) {
+// //         case 'ArrowUp':
+// //             rotate();
+// //             break;
+// //         case 'ArrowDown':
+// //             moveDown();
+// //             break;
+// //         case 'ArrowLeft':
+// //             moveLeft();
+// //             break;
+// //         case 'ArrowRight':
+// //             moveRight();
+// //             break;
+// //     }\\
+// }
 
 function moveDown() {
     tetris.moveTetrominoDown();
